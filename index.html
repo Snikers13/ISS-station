@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="">
+	<link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+	<title>Document</title>
+  </head>
+  <body>
+<div id="p_prldr"><div class="contpre"><span class="svg_anm"></span></div></div>
+<div class='forLL'>
+        <span style="padding: 4px"><strong>ISS is now located at:</strong></span>
+        <br/>
+        <span id='lat' class='ll'></span>
+        <span id='long' class='ll'></span>
+</div>
+<div id="map"></div>
+
+<div class='state'>
+
+      <div class='list'>
+          <ul class='person'>
+
+          </ul>
+          Information about ISS you can see here<a href='https://www.nasa.gov/mission_pages/station/main/index.html' target="_blank"><img src='./images/nasa.png'></a>
+      </div>
+
+      <div id='forCount'>
+        <span id='count'></span>
+      </div>
+
+      <div id='t'>
+        <span id='time'></span>
+
+      <div>
+
+</div>
+</div>
+
+<script type="text/javascript"> 
+$(window).on('load', function () {
+  var $preloader = $('#p_prldr'),
+    $svg_anm   = $preloader.find('.svg_anm');
+  $svg_anm.fadeOut(5000);
+  $preloader.delay(5000).fadeOut('slow');
+});
+</script>
+
+
+<script defer async
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr40pKSrojuSMXir_la7YtVgO-yZnkZ1c&callback=initMap">
+</script>
+
+<script type="module" src='app.js'></script>
+
+</body>
+</html>

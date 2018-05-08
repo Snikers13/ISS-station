@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+
+#p_prldr {
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #454749;
+z-index: 30;
+}
+ 
+.contpre small{font-size:25px;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 131px;
+height: 131px;
+background: url(images/spinning-circles.svg) center center no-repeat;
+background-size: 131px;    
+margin: -16px 0 0 -16px;
+}
+#map {
+	display: inline-block;
+	height: 400px;
+	width: 400px;
+    position: absolute;
+    top: 320px;
+    left: 530px;
+    transform: translate(-50%, -50%)
+}
+      /* Optional: Makes the sample page fill the window. */
+
+ul li {
+	position: relative;
+	list-style-image: url(images/a.png);
+	height: 40px;
+	width: 250px;
+	line-height: 35px;
+	padding-left: 6px;
+	background: #FFFFFF;
+    border: 1px solid #3D3C3C;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+.list {
+	padding-top: 20px;
+	display: block;
+	padding: 5px;
+	border: 1px solid black;
+	width: 18.75em;
+	height: 350px;
+	position: absolute;
+    top: 120px;
+    left: 750px;
+    margin-right: -500px;
+}
+#t {
+	border: 1px solid;
+	width: 310px;
+	height: 50px;
+	position: absolute;
+	left: 750px;
+	top: 60px;
+}
+#time {
+    position: absolute;
+    top: 20%;
+    padding-left: 12px;
+
+}
+#forCount {
+	position: absolute;
+	border: 1px solid;
+	border-top: none;
+	width: 310px;
+	height: 38px;
+	left: 750px;
+	top: 480px;
+	text-align: center;
+}
+.forLL {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position: absolute;
+	border: 1px solid;
+	width: 398px;
+	height: 50px;
+	left: 330px;
+	top: 60px;
+
+}
+
+#lat, #long {
+	padding: 8px;
+	font-style: oblique;
+}
+#count {
+	position: relative;
+	top: 12px;
+}
